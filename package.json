@@ -1,0 +1,24 @@
+{
+  "name": "csstree",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "hhfra",
+  "contributors": [],
+  "dependencies": {},
+  "devDependencies": {
+    "del": "~1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-less": "^3.3.0",
+    "gulp-postcss": "^6.3.0",
+    "less": "^2.7.2",
+    "path": "^0.12.7",
+    "postcss-merge-selectors": "0.0.6"
+  }
+}
