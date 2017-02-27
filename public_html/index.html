@@ -4,14 +4,13 @@
 		<title>CSS Tree demo</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="tree.css">
-		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/angular-1.6.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<style>
 			.folder-container {
 				height:250px;
@@ -19,12 +18,6 @@
 				overflow-y:auto;
 				border:solid #222 1px;
 				border-radius: 4px
-			}
-			.tree button[data-toggle="collapse"] > span.fa:before { /* MINUS OPEN */
-				content: "\f146  \f115"; 
-			}
-			.tree button[data-toggle="collapse"].collapsed > span.fa:before { /* PLUS CLOSE */
-				content: "\f0fe  \f07c"; 
 			}
 		</style>
 	</head>
@@ -34,7 +27,9 @@
 				<button	class="list-group-item {{(folder === ctrl.selectedFolder)?'active':''}}"
 							ng-click="ctrl.handlerSelectFolder($event, folder)"
 							data-toggle="collapse" data-target="#{{folder.id}}">
-					<span class="fa"></span>&nbsp;{{folder.label}}{{$index}}
+					<span open class="glyphicon glyphicon-minus"></span><span close class="glyphicon glyphicon-plus"></span>
+					<span open class="glyphicon glyphicon-folder-open"></span><span close class="glyphicon glyphicon-folder-close"></span>&nbsp;
+					{{folder.label}}{{$index}}
 					<span class="badge">0</span>
 				</button>
 				<div class="collapse in" id="{{folder.id}}">
@@ -44,7 +39,7 @@
 			<span ng-if="!folder.folders || !folder.folders.length">
 				<button	class="list-group-item {{(folder === ctrl.selectedFolder)?'active':''}}"
 							ng-click="ctrl.handlerSelectFolder($event, folder)"> 
-					<span class="fa fa-folder-open-o" aria-hidden="true"></span>&nbsp;{{folder.label}}{{$index}}
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp;{{folder.label}}{{$index}}
 					<span class="badge">0</span>
 				</button>
 			</span>

@@ -9,13 +9,24 @@
 		ctrl.handlerSelectFolder = handlerSelectFolder;
 		ctrl.selectedFolder = null;
 		function handlerSelectFolder(event, folder) {
-			var span = event.currentTarget.firstElementChild;
-			if(!folder.folders || !folder.folders.length || event.offsetX < span.offsetLeft || event.offsetX > span.offsetLeft + span.offsetWidth) {
+			if(!isFoldIcon(event) && folder.folders && folder.folders.length) {
 				event.preventDefault();
 				event.stopPropagation();
 				event.stopImmediatePropagation();
 				ctrl.selectedFolder = folder;
 			}
+		}
+		function isFoldIcon(event) {
+			var children = [].slice.call(event.currentTarget.children);
+			var eltOffsetLeft = 5;
+			return children.some(function(elt) {
+				var isFold = false;
+				if(elt.offsetWidth && (elt.attributes.open || elt.attributes.close)) {
+					isFold = event.offsetX >= eltOffsetLeft && event.offsetX <= eltOffsetLeft + elt.offsetWidth;
+				}
+				eltOffsetLeft += elt.offsetWidth;
+				return isFold;
+			});
 		}
 		function init() {
 			dataservices.getFolders().then(function(res) {

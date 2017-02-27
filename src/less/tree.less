@@ -2,29 +2,54 @@
     Created on : 15 janv. 2017, 13:17:17
     Author     : hhfra
 */
+.tree button > [close] {
+	display: none;
+} 
+.tree button > [open] {
+	display: initial;
+} 
+.tree button.collapsed > [open] {
+	display: none;
+} 
+.tree button.collapsed > [close] {
+	display: initial;
+} 
+@padd-left:5;
+.tree > span > span > button {
+	@val:@padd-left+0;
+	padding-left:~"@{val}px !important";
+}
 .tree [class^="collaps"] > span > span > button {
-	padding-left:35px;
+	@val:@padd-left+25;
+	padding-left:~"@{val}px";
 }
 .tree [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	padding-left:60px;
+	@val:@padd-left+50;
+	padding-left:~"@{val}px";
 }
 .tree [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	padding-left:85px;
+	@val:@padd-left+75;
+	padding-left:~"@{val}px";
 }
 .tree [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	padding-left:110px;
+	@val:@padd-left+100;
+	padding-left:~"@{val}px";
 }
 .tree [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	padding-left:135px;
+	@val:@padd-left+125;
+	padding-left:~"@{val}px";
 }
 .tree [class^="collaps"] > span > span >[class^="collaps"] > span > span >  [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	padding-left:160px;
+	@val:@padd-left+150;
+	padding-left:~"@{val}px";
 }
 .tree [class^="collaps"] > span > span >[class^="collaps"] > span > span >[class^="collaps"] > span > span >  [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	padding-left:185px;
+	@val:@padd-left+175;
+	padding-left:~"@{val}px";
 }
 .tree [class^="collaps"] > span > span >[class^="collaps"] > span > span >[class^="collaps"] > span > span >[class^="collaps"] > span > span >  [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	padding-left:210px;
+	@val:@padd-left+200;
+	padding-left:~"@{val}px";
 }
 .tree * {
 	border-bottom: none !important;
