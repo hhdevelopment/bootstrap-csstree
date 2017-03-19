@@ -37,7 +37,7 @@ Add only tree.css to your project
 	</div>
 </span>
 ```
-```javascript
+```js
 function handlerSelectFolder(event, folder) {
 	if(event.target === event.currentTarget)  // if icons don't select folder
 		ctrl.selectedFolder = folder;
