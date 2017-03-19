@@ -2,6 +2,16 @@
     Created on : 15 janv. 2017, 13:17:17
     Author     : hhfra
 */
+.generate-tree(40, 0, '');
+.generate-tree(@n, @i, @s) when (@i =< @n) {
+	@rule:~'.tree @{s} > span > span > .tree-item > a:first-child';
+	@{rule} {
+		@padd:(@i * 10 + 5);
+		padding-left: ~"@{padd}px";
+	}
+	@next: '@{s} > span > span > div.tree-children';
+	.generate-tree(@n, (@i + 1), @next);
+}
 .tree-item > a.collapsed > [open],
 .tree-item > a > [close] {
 	display: none;
@@ -10,53 +20,6 @@
 .tree-item > a > [open] {
 	display: initial;
 } 
-.tree > span > span > .tree-item > a:first-child {
-	padding-left: 5px;
-}
-span > span > div.tree-children {
-	.tree > & > span > span > .tree-item > a:first-child {
-		padding-left: 15px;
-	}
-	.tree > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 25px;
-	}
-	.tree > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 35px;
-	}
-	.tree > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 45px;
-	}
-	.tree > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 55px;
-	}
-	.tree > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 65px;
-	}
-	.tree > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 75px;
-	}
-	.tree > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 85px;
-	}
-	.tree > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 95px;
-	}
-	.tree > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 105px;
-	}
-	.tree > & > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 115px;
-	}
-	.tree > & > & > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 125px;
-	}
-	.tree > & > & > & > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 135px;
-	}
-	.tree > & > & > & > & > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
-		padding-left: 145px;
-	}
-}
 .tree-item > a {
     text-decoration: none !important;
 }
