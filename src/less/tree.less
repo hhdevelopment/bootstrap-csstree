@@ -2,71 +2,100 @@
     Created on : 15 janv. 2017, 13:17:17
     Author     : hhfra
 */
-.tree button > [close] {
+.tree-item > a.collapsed > [open],
+.tree-item > a > [close] {
 	display: none;
 } 
-.tree button > [open] {
+.tree-item > a.collapsed > [close],
+.tree-item > a > [open] {
 	display: initial;
 } 
-.tree button.collapsed > [open] {
-	display: none;
-} 
-.tree button.collapsed > [close] {
-	display: initial;
-} 
-@padd-left:5;
-.tree > span > span > button {
-	@val:@padd-left+0;
-	padding-left:~"@{val}px !important";
+.tree > span > span > .tree-item > a:first-child {
+	padding-left: 5px;
 }
-.tree [class^="collaps"] > span > span > button {
-	@val:@padd-left+25;
-	padding-left:~"@{val}px";
+span > span > div.tree-children {
+	.tree > & > span > span > .tree-item > a:first-child {
+		padding-left: 15px;
+	}
+	.tree > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 25px;
+	}
+	.tree > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 35px;
+	}
+	.tree > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 45px;
+	}
+	.tree > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 55px;
+	}
+	.tree > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 65px;
+	}
+	.tree > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 75px;
+	}
+	.tree > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 85px;
+	}
+	.tree > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 95px;
+	}
+	.tree > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 105px;
+	}
+	.tree > & > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 115px;
+	}
+	.tree > & > & > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 125px;
+	}
+	.tree > & > & > & > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 135px;
+	}
+	.tree > & > & > & > & > & > & > & > & > & > & > & > & > & > & > & > span > span > .tree-item > a:first-child {
+		padding-left: 145px;
+	}
 }
-.tree [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	@val:@padd-left+50;
-	padding-left:~"@{val}px";
+.tree-item > a {
+    text-decoration: none !important;
 }
-.tree [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	@val:@padd-left+75;
-	padding-left:~"@{val}px";
-}
-.tree [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	@val:@padd-left+100;
-	padding-left:~"@{val}px";
-}
-.tree [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	@val:@padd-left+125;
-	padding-left:~"@{val}px";
-}
-.tree [class^="collaps"] > span > span >[class^="collaps"] > span > span >  [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	@val:@padd-left+150;
-	padding-left:~"@{val}px";
-}
-.tree [class^="collaps"] > span > span >[class^="collaps"] > span > span >[class^="collaps"] > span > span >  [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	@val:@padd-left+175;
-	padding-left:~"@{val}px";
-}
-.tree [class^="collaps"] > span > span >[class^="collaps"] > span > span >[class^="collaps"] > span > span >[class^="collaps"] > span > span >  [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > [class^="collaps"] > span > span > button {
-	@val:@padd-left+200;
-	padding-left:~"@{val}px";
-}
-.tree * {
+.tree-item {
+	cursor: pointer;
+	position: relative;
+	display: block;
+	background-color: #fff;
+	padding-left : 0px;
+	padding-right : 10px;
+	padding-top : 6px;
+	padding-bottom : 6px;
+	border-top: 1px solid #ddd;
 	border-bottom: none !important;
 	border-left: none !important;
 	border-right: none !important;
 }
-.tree .list-group-item:first-child{
-	border-top-left-radius: initial;
-	border-top-right-radius: initial;
+.tree-item.active > a {
+	color:inherit;
 }
-.tree .list-group-item{
-	padding: 4px 10px
+.tree-item:hover {
+	background-color: #f9f2f4;
 }
-.tree .list-group-item:last-child{
-	border-bottom-left-radius: initial;
-	border-bottom-right-radius: initial;
+.tree-item > .badge {
+    float: right;
 }
-.tree .list-group {
-	margin-bottom: 0px !important;
+.tree-item.active, .tree-item.active:focus, .tree-item.active:hover {
+    text-shadow: 0 -1px 0 #286090;
+    background-image: -webkit-linear-gradient(top,#337ab7 0,#2b669a 100%);
+    background-image: -o-linear-gradient(top,#337ab7 0,#2b669a 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#2b669a));
+    background-image: linear-gradient(to bottom,#337ab7 0,#2b669a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0);
+    background-repeat: repeat-x;
+    border-color: #2b669a;
+}
+.tree-item.active, .tree-item.active:focus, .tree-item.active:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
 }

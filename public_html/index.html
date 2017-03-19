@@ -19,38 +19,20 @@
 				border:solid #222 1px;
 				border-radius: 4px
 			}
+			.tree *.glyphicon-folder-open,
+			.tree *.glyphicon-folder-close {
+				color:sandybrown;
+			}
 		</style>
 	</head>
 	<body>
-		<script type="text/ng-template" id="fileTreeTemplate">
-			<span ng-if="folder.folders && folder.folders.length">
-				<button	class="list-group-item {{(folder === ctrl.selectedFolder)?'active':''}}"
-							ng-click="ctrl.handlerSelectFolder($event, folder)"
-							data-toggle="collapse" data-target="#{{folder.id}}">
-					<span open class="glyphicon glyphicon-minus"></span><span close class="glyphicon glyphicon-plus"></span>
-					<span open class="glyphicon glyphicon-folder-open"></span><span close class="glyphicon glyphicon-folder-close"></span>&nbsp;
-					{{folder.label}}{{$index}}
-					<span class="badge">0</span>
-				</button>
-				<div class="collapse in" id="{{folder.id}}">
-					<span ng-repeat="folder in folder.folders track by $index" ng-include="'fileTreeTemplate'"></span>
-				</div>
-			</span>
-			<span ng-if="!folder.folders || !folder.folders.length">
-				<button	class="list-group-item {{(folder === ctrl.selectedFolder)?'active':''}}"
-							ng-click="ctrl.handlerSelectFolder($event, folder)"> 
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp;{{folder.label}}{{$index}}
-					<span class="badge">0</span>
-				</button>
-			</span>
-		</script>
 		<div class="container" ng-controller="DemoCtrl as ctrl">
 			<div class="page-header">
 				<h1>Demo css tree</h1>
 			</div>
 			<div class="folder-container">
-				<div class="tree list-group">
-					<span ng-repeat="folder in ctrl.folders track by $index" ng-include="'fileTreeTemplate'"></span>
+				<div class="tree">
+					<span ng-repeat="folder in ctrl.folders track by $index" ng-include="'tree-template.html'"></span>
 				</div>
 			</div>
 		</div>

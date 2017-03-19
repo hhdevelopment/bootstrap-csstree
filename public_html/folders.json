@@ -1,131 +1,59 @@
 [
-    {"id":201, "label":"Folder", "folders":[
-        {"id":202, "label":"Folder", "folders":[
-            {"id":203, "label":"Folder"},
-            {"id":204, "label":"Folder"}
+    {"id":"1", "label":"Folder", "folders":[
+        {"id":"1_1", "label":"Folder", "folders":[
+            {"id":"1_1_1", "label":"Folder"},
+            {"id":"1_1_2", "label":"Folder"}
+		  ]},
+	     {"id":"1_2", "label":"Folder", "folders":[
+	         {"id":"1_2_1", "label":"Folder"},
+            {"id":"1_2_2", "label":"Folder"},
+            {"id":"1_2_3", "label":"Folder"},
+            {"id":"1_2_4", "label":"Folder"},
+            {"id":"1_2_5", "label":"Folder"},
+            {"id":"1_2_6", "label":"Folder"},
+            {"id":"1_2_7", "label":"Folder"},
+            {"id":"1_2_8", "label":"Folder", "folders":[
+					{"id":"1_2_8_1", "label":"Folder"},
+					{"id":"1_2_8_2", "label":"Folder", "folders":[
+						{"id":"1_2_8_2_1", "label":"Folder"},
+						{"id":"1_2_8_2_2", "label":"Folder"},
+						{"id":"1_2_8_2_3", "label":"Folder"},
+						{"id":"1_2_8_2_4", "label":"Folder"}
+					]},
+					{"id":"1_2_8_3", "label":"Folder"},
+					{"id":"1_2_8_4", "label":"Folder"},
+					{"id":"1_2_8_5", "label":"Folder"},
+					{"id":"1_2_8_6", "label":"Folder"},
+					{"id":"1_2_8_7", "label":"Folder"}
+				]},
+            {"id":"1_2_9", "label":"Folder"}
         ]},
-        {"id":205, "label":"Folder", "folders":[
-            {"id":206, "label":"Folder"},
-            {"id":207, "label":"Folder"},
-            {"id":208, "label":"Folder"},
-            {"id":209, "label":"Folder"},
-            {"id":210, "label":"Folder"},
-            {"id":211, "label":"Folder"},
-            {"id":212, "label":"Folder"},
-            {"id":213, "label":"Folder"},
-            {"id":214, "label":"Folder"},
-            {"id":215, "label":"Folder"},
-            {"id":216, "label":"Folder"},
-            {"id":217, "label":"Folder"},
-            {"id":218, "label":"Folder"},
-            {"id":219, "label":"Folder"},
-            {"id":220, "label":"Folder"},
-            {"id":221, "label":"Folder"},
-            {"id":222, "label":"Folder"},
-            {"id":223, "label":"Folder"},
-            {"id":224, "label":"Folder"},
-            {"id":225, "label":"Folder"}
+        {"id":"1_3", "label":"Folder", "folders":[
+            {"id":"1_3_1", "label":"Folder"},
+            {"id":"1_3_2", "label":"Folder"},
+            {"id":"1_3_3", "label":"Folder"},
+            {"id":"1_3_4", "label":"Folder"},
+            {"id":"1_3_5", "label":"Folder"}
         ]},
-        {"id":226, "label":"Folder", "folders":[
-            {"id":227, "label":"Folder"},
-            {"id":228, "label":"Folder"},
-            {"id":229, "label":"Folder"},
-            {"id":230, "label":"Folder"},
-            {"id":231, "label":"Folder"}
+        {"id":"1_4", "label":"Folder", "folders":[
+            {"id":"1_4_1", "label":"Folder"},
+            {"id":"1_4_2", "label":"Folder"},
+            {"id":"1_4_3", "label":"Folder"},
+            {"id":"1_4_4", "label":"Folder"},
+            {"id":"1_4_5", "label":"Folder"}
         ]},
-        {"id":232, "label":"Folder", "folders":[
-            {"id":233, "label":"Folder"},
-            {"id":234, "label":"Folder"},
-            {"id":235, "label":"Folder"},
-            {"id":236, "label":"Folder"},
-            {"id":237, "label":"Folder"}
+        {"id":"1_5", "label":"Folder", "folders":[
+            {"id":"1_5_1", "label":"Folder"},
+            {"id":"1_5_2", "label":"Folder"},
+            {"id":"1_5_3", "label":"Folder"},
+            {"id":"1_5_4", "label":"Folder"}
         ]},
-        {"id":238, "label":"Folder", "folders":[
-            {"id":239, "label":"Folder"},
-            {"id":374, "label":"Folder"},
-            {"id":375, "label":"Folder"},
-            {"id":376, "label":"Folder"}
-        ]},
-        {"id":240, "label":"Folder"}
+        {"id":"1_6", "label":"Folder"}
     ]},
-    {"id":272, "label":"Folder", "folders":[
-        {"id":273, "label":"Folder"},
-        {"id":274, "label":"Folder", "folders":[
-            {"id":275, "label":"Folder"},
-            {"id":276, "label":"Folder"},
-            {"id":277, "label":"Folder"},
-            {"id":278, "label":"Folder"}
-        ]}
-    ]},
-    {"id":286, "label":"Folder", "folders":[
-        {"id":287, "label":"Folder"},
-        {"id":288, "label":"Folder"},
-        {"id":289, "label":"Folder", "folders":[
-            {"id":290, "label":"Folder"},
-            {"id":291, "label":"Folder"},
-            {"id":292, "label":"Folder"},
-            {"id":293, "label":"Folder"}
-        ]}
-    ]},
-    {"id":294, "label":"Folder", "folders":[
-        {"id":295, "label":"Folder"},
-        {"id":296, "label":"Folder", "folders":[
-            {"id":297, "label":"Folder"},
-            {"id":298, "label":"Folder"},
-            {"id":299, "label":"Folder"},
-            {"id":300, "label":"Folder"}
-        ]}
-    ]},
-    {"id":301, "label":"Folder", "folders":[
-        {"id":302, "label":"Folder"},
-        {"id":303, "label":"Folder", "folders":[
-            {"id":304, "label":"Folder"},
-            {"id":305, "label":"Folder"},
-            {"id":306, "label":"Folder"},
-            {"id":307, "label":"Folder"}
-        ]}
-    ]},
-    {"id":308, "label":"Folder", "folders":[
-        {"id":309, "label":"Folder"},
-        {"id":310, "label":"Folder", "folders":[
-            {"id":311, "label":"Folder"},
-            {"id":312, "label":"Folder"},
-            {"id":313, "label":"Folder"},
-            {"id":314, "label":"Folder"}
-        ]}
-    ]},
-    {"id":315, "label":"IPF - pers. Fixes", "folders":[
-        {"id":316, "label":"Folder"},
-        {"id":317, "label":"Folder", "folders":[
-            {"id":318, "label":"Folder"},
-            {"id":319, "label":"Folder"},
-            {"id":320, "label":"Folder"},
-            {"id":321, "label":"Folder"}
-        ]}
-    ]},
-    {"id":322, "label":"Folder", "folders":[
-        {"id":323, "label":"Folder"},
-        {"id":324, "label":"Folder", "folders":[
-            {"id":325, "label":"Folder"},
-            {"id":326, "label":"Folder"},
-            {"id":327, "label":"Folder"},
-            {"id":328, "label":"Folder"}
-        ]}
-    ]},
-    {"id":329, "label":"Folder", "folders":[
-        {"id":330, "label":"Folder"},
-        {"id":331, "label":"Folder"},
-        {"id":332, "label":"Folder"},
-        {"id":333, "label":"Folder"},
-        {"id":334, "label":"Folder"},
-        {"id":335, "label":"Folder"},
-        {"id":336, "label":"Folder"},
-        {"id":337, "label":"Folder"},
-        {"id":338, "label":"Folder"}
-    ]},
-    {"id":339, "label":"Folder", "folders":[
-        {"id":340, "label":"Folder"},
-        {"id":341, "label":"Folder"},
-        {"id":342, "label":"Folder"}
-    ]}
+   {"id":"2", "label":"Folder", "folders":[
+        {"id":"2_1", "label":"Folder", "folders":[
+            {"id":"2_1_1", "label":"Folder"},
+            {"id":"2_1_2", "label":"Folder"}
+		  ]}
+	]}
 ]
