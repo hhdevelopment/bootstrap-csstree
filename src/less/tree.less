@@ -4,24 +4,28 @@
 */
 .generate-tree(40, 0, '');
 .generate-tree(@n, @i, @s) when (@i =< @n) {
-	@rule:~'.tree @{s} > span > span > .tree-item > a:first-child';
+	@rule:~'.tree @{s} > span > span > .tree-item > span:first-child';
 	@{rule} {
-		@padd:(@i * 10 + 5);
+		@padd:(@i * 10 + 45);
 		padding-left: ~"@{padd}px";
 	}
 	@next: '@{s} > span > span > div.tree-children';
 	.generate-tree(@n, (@i + 1), @next);
 }
-.tree-item > a.collapsed > [open],
-.tree-item > a > [close] {
+.tree-item > span > a.collapsed > [open],
+.tree-item > span > a > [close] {
 	display: none;
 } 
-.tree-item > a.collapsed > [close],
-.tree-item > a > [open] {
+.tree-item > span > a.collapsed > [close],
+.tree-item > span > a > [open] {
 	display: initial;
 } 
-.tree-item > a {
+.tree-item > span > a {
     text-decoration: none !important;
+}
+.tree-item > span {
+	display: block;
+	position: relative;
 }
 .tree-item {
 	cursor: pointer;
@@ -37,13 +41,17 @@
 	border-left: none !important;
 	border-right: none !important;
 }
+.tree-item > span > a {
+	margin-left:-36px;
+}
 .tree-item.active a {
 	color:inherit;
 }
 .tree-item:hover {
 	background-color: #f9f2f4;
 }
-.tree-item > .badge {
+.tree-item > .badge,
+.tree-item > * > .badge {
     float: right;
 }
 .tree-item.active, .tree-item.active:focus, .tree-item.active:hover {

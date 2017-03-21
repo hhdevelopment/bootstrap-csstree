@@ -16,7 +16,7 @@
 		 * @returns {undefined}
 		 */
 		function handlerSelectFolder(event, folder) {
-			if(event.target === event.currentTarget) {
+			if(!event.target.hasAttribute("notselect")) {
 				ctrl.selectedFolder = folder;
 			}
 		}
