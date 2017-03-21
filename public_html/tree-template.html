@@ -2,14 +2,10 @@
 	<div ng-class="{'active':folder === ctrl.selectedFolder}" class="tree-item"> 
 		<span ng-click="ctrl.handlerSelectFolder($event, folder)">
 			<a href data-toggle="collapse" data-target="#folder{{folder.id}}">
-				<span notselect open>
-					<i notselect ng-class="{'invisible':!folder.folders || !folder.folders.length}" class="glyphicon glyphicon-minus"></i>
-					<i notselect class="glyphicon glyphicon-folder-open"></i>
-				</span>
-				<span notselect close>
-					<i notselect class="glyphicon glyphicon-plus"></i>
-					<i notselect class="glyphicon glyphicon-folder-close"></i>
-				</span>
+					<i open notselect ng-class="{'invisible':!folder.folders || !folder.folders.length}" class="glyphicon glyphicon-minus"></i>
+					<i open notselect class="glyphicon glyphicon-folder-open"></i>
+					<i close notselect class="glyphicon glyphicon-plus"></i>
+					<i close notselect class="glyphicon glyphicon-folder-close"></i>
 			</a>
 			<span class="badge" ng-bind="0"></span>
 <!--			<span notselect class="pull-right">
