@@ -64,14 +64,20 @@
     background-repeat: repeat-x;
     border-color: #2b669a;
 }
-.tree-item.active, .tree-item.active:focus, .tree-item.active:hover {
+.tree-item.active:not(.disabled), .tree-item.active:not(.disabled):focus, .tree-item.active:not(.disabled):hover {
     z-index: 2;
     color: #fff;
     background-color: #337ab7;
     border-color: #337ab7;
 }
-.tree-item.disabled, .tree-item.disabled:focus, .tree-item.disabled:hover {
+.tree-item.disabled:not(.active), .tree-item.disabled:not(.active):focus, .tree-item.disabled:not(.active):hover {
     color: #777;
     cursor: not-allowed;
     background-color: #eee;
+}
+.tree-item.active.disabled, .tree-item.active.disabled:focus, .tree-item.active.disabled:hover {
+	cursor: not-allowed;
+	filter: alpha(opacity=65);
+	box-shadow: none;
+	opacity: .65;
 }
