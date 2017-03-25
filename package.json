@@ -1,6 +1,6 @@
 {
 	"name": "bootstrap-csstree",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": "Achache françois",
 	"license": "ISC",
 	"main": "dist/tree.css",
@@ -11,7 +11,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "fdf"
+		"url": "https://bitbucket.org/hhfrancois/csstree"
 	},
 	"dependencies": {
 		"angular": "^1.6.3",
