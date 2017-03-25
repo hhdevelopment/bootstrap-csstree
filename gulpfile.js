@@ -10,14 +10,14 @@ var gulp = require('gulp'),
 gulp.task('default', ['clean', 'build', 'site']);
 
 gulp.task('build', function () {
-	return gulp.src('src/tree.less')
+	return gulp.src('src/less/tree.less')
 	  .pipe(less({paths: [path.join(__dirname, 'less', 'includes')]}))
 	  .pipe(postcss([mergecss()]))
 	  .pipe(cssnano())
 	  .pipe(gulp.dest('dist')).pipe(gulp.dest('public_html'));
 });
 gulp.task('site', function () {
-	gulp.src([	"src/index.js", "src/index.html", "src/folders.json", "src/tree-template.html"]).pipe(gulp.dest('public_html'));
+	gulp.src([	"src/demo/index.js", "src/demo/index.html", "src/demo/folders.json", "src/demo/tree-template.html"]).pipe(gulp.dest('public_html'));
 	gulp.src([	"node_modules/bootstrap/dist/css/bootstrap.css",
 					"node_modules/bootstrap/dist/css/bootstrap-theme.css"
 				]).pipe(cssnano()).pipe(concat("vendors.css")).pipe(gulp.dest('public_html/css'));
@@ -34,5 +34,5 @@ gulp.task('site', function () {
 });
 
 gulp.task('clean', function () {
-	return del.sync(['dist/**/*']);
+	return del.sync(['dist/**/*', 'public_html/**/*']);
 });
