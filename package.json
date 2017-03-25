@@ -1,6 +1,6 @@
 {
 	"name": "bootstrap-csstree",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": "Achache françois",
 	"license": "ISC",
 	"main": "dist/tree.css",
@@ -19,7 +19,6 @@
 		"jquery": "^3.2.1"
 	},
 	"devDependencies": {
-		"npm-auto-version": "^1.0.0",
 		"del": "~1.2.0",
 		"gulp": "^3.9.1",
 		"gulp-concat": "^2.6.1",
@@ -31,7 +30,5 @@
 		"postcss-merge-selectors": "0.0.6"
 	},
 	"scripts": {
-		"prepublish": "npm-auto-version",
-		"postpublish": "git push origin --tags"
 	}
 }
