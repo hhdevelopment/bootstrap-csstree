@@ -1,5 +1,5 @@
 <span>
-	<div ng-class="{'active':ctrl.selectedFolderIds.includes(folder.id), 
+	<div ng-class="{'active':ctrl.selectedFolderIds.includes(folder.id) || folder.active, 
 							'tree-item-info':folder.info, 
 							'tree-item-success':folder.success, 
 							'tree-item-warning':folder.warning, 
