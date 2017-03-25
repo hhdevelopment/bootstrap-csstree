@@ -18,7 +18,7 @@ pipelines:
           - git config user.name "hhfrancois"
           - npm version patch
           - npm publish
-          - git commit -m "New version - $BITBUCKET_COMMIT"
-          - git push origin master
+          - git commit -m "New version"
+          - git push
            
  
