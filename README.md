@@ -14,6 +14,14 @@ Treecss is only css so no probleme for packaging.
 
 Finally add tree.css to your project
 
+* Install 
+Use npm
+npm install bootstrap-csstree --save
+
+Include css in your build
+
+node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
+
 * Configuration
 
 ```html
