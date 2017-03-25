@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-csstree",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "author": "Achache françois",
   "license": "ISC",
   "main": "dist/tree.css",
