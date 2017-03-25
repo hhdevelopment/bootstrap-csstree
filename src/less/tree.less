@@ -55,45 +55,16 @@
 .tree-item > * > .badge {
     float: right;
 }
-.tree-item.active, .tree-item.active:focus, .tree-item.active:hover {
-    text-shadow: 0 -1px 0 #286090;
-    background-image: -webkit-linear-gradient(top,#337ab7 0,#2b669a 100%);
-    background-image: -o-linear-gradient(top,#337ab7 0,#2b669a 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#2b669a));
-    background-image: linear-gradient(to bottom,#337ab7 0,#2b669a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0);
-    background-repeat: repeat-x;
-    border-color: #2b669a;
-}
-.tree-item.active:not(.disabled), .tree-item.active:not(.disabled):focus, .tree-item.active:not(.disabled):hover {
-    z-index: 2;
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7;
-}
-.tree-item.disabled:not(.active), .tree-item.disabled:not(.active):focus, .tree-item.disabled:not(.active):hover {
-    color: #777;
-    cursor: not-allowed;
-    background-color: #eee;
-}
-.tree-item.active.disabled, .tree-item.active.disabled:focus, .tree-item.active.disabled:hover {
-	cursor: not-allowed;
-	filter: alpha(opacity=65);
-	box-shadow: none;
-	opacity: .65;
-}
 .tree-item:hover,
 .tree-item:focus {
   color: #555;
   text-decoration: none;
   background-color: #f5f5f5;
 }
-.tree-item.disabled,
-.tree-item.disabled:hover,
-.tree-item.disabled:focus {
-  color: #777;
-  cursor: not-allowed;
-  background-color: #eee;
+.tree-item.disabled, .tree-item.disabled:focus, .tree-item.disabled:hover {
+	cursor: not-allowed;
+	filter: alpha(opacity=65);
+	opacity: .65;
 }
 .tree-item.active,
 .tree-item.active:hover,

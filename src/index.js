@@ -7,7 +7,7 @@
 		var ctrl = this;
 		ctrl.folders = [];
 		ctrl.handlerSelectFolder = handlerSelectFolder;
-		ctrl.selectedFolder = null;
+		ctrl.selectedFolderIds = [];
 
 		/**
 		 * folder selection 
@@ -17,7 +17,16 @@
 		 */
 		function handlerSelectFolder(event, folder) {
 			if(!event.target.hasAttribute("notselect")) {
-				ctrl.selectedFolder = folder;
+				if(!event.ctrlKey) {
+					ctrl.selectedFolderIds = [folder.id];
+				} else {
+					var idx = ctrl.selectedFolderIds.indexOf(folder.id);
+					if(idx !== -1) {
+						ctrl.selectedFolderIds.splice(idx, 1);
+					} else {
+						ctrl.selectedFolderIds.push(folder.id);
+					}
+				}
 			}
 		}
 		/**

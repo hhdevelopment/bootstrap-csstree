@@ -5,28 +5,31 @@
             {"id":"1_1_2", "label":"Folder"}
 		  ]},
 	     {"id":"1_2", "label":"Folder", "folders":[
-	         {"id":"1_2_1", "label":"Folder"},
-            {"id":"1_2_2", "label":"Folder"},
-            {"id":"1_2_3", "label":"Folder"},
-            {"id":"1_2_4", "label":"Folder"},
-            {"id":"1_2_5", "label":"Folder"},
-            {"id":"1_2_6", "label":"Folder"},
-            {"id":"1_2_7", "label":"Folder"},
-            {"id":"1_2_8", "label":"Folder", "folders":[
-					{"id":"1_2_8_1", "label":"Folder"},
-					{"id":"1_2_8_2", "label":"Folder", "folders":[
-						{"id":"1_2_8_2_1", "label":"Folder"},
-						{"id":"1_2_8_2_2", "label":"Folder"},
-						{"id":"1_2_8_2_3", "label":"Folder"},
-						{"id":"1_2_8_2_4", "label":"Folder"}
+	         {"id":"1_2_1", "label":"Folder Info", "info":true},
+            {"id":"1_2_2", "label":"Folder Success", "success":true},
+            {"id":"1_2_3", "label":"Folder Warning", "warning":true},
+            {"id":"1_2_4", "label":"Folder Danger", "danger":true},
+            {"id":"1_2_5", "label":"Folder Info Disabled", "info":true, "disabled":true},
+            {"id":"1_2_6", "label":"Folder Success Disabled", "success":true, "disabled":true},
+            {"id":"1_2_7", "label":"Folder Warning Disabled", "warning":true, "disabled":true},
+            {"id":"1_2_8", "label":"Folder Danger Disabled", "danger":true, "disabled":true},
+            {"id":"1_2_9", "label":"Folder Disabled", "disabled":true},
+            {"id":"1_2_10", "label":"Folder"},
+            {"id":"1_2_11", "label":"Folder", "folders":[
+					{"id":"1_2_11_1", "label":"Folder"},
+					{"id":"1_2_11_2", "label":"Folder", "folders":[
+						{"id":"1_2_11_2_1", "label":"Folder"},
+						{"id":"1_2_11_2_2", "label":"Folder"},
+						{"id":"1_2_11_2_3", "label":"Folder"},
+						{"id":"1_2_11_2_4", "label":"Folder"}
 					]},
-					{"id":"1_2_8_3", "label":"Folder"},
-					{"id":"1_2_8_4", "label":"Folder"},
-					{"id":"1_2_8_5", "label":"Folder"},
-					{"id":"1_2_8_6", "label":"Folder"},
-					{"id":"1_2_8_7", "label":"Folder"}
+					{"id":"1_2_11_3", "label":"Folder"},
+					{"id":"1_2_11_4", "label":"Folder"},
+					{"id":"1_2_11_5", "label":"Folder"},
+					{"id":"1_2_11_6", "label":"Folder"},
+					{"id":"1_2_11_7", "label":"Folder"}
 				]},
-            {"id":"1_2_9", "label":"Folder"}
+            {"id":"1_2_12", "label":"Folder"}
         ]},
         {"id":"1_3", "label":"Folder", "folders":[
             {"id":"1_3_1", "label":"Folder"},

@@ -1,12 +1,17 @@
 <span>
-	<div ng-class="{'active':folder === ctrl.selectedFolder}" class="tree-item"> 
+	<div ng-class="{'active':ctrl.selectedFolderIds.includes(folder.id), 
+							'tree-item-info':folder.info, 
+							'tree-item-success':folder.success, 
+							'tree-item-warning':folder.warning, 
+							'tree-item-danger':folder.danger, 
+							'disabled':folder.disabled}" 
+			class="tree-item"> 
 		<span ng-click="ctrl.handlerSelectFolder($event, folder)">
 			<a href data-toggle="collapse" data-target="#folder{{folder.id}}">
 				<i open notselect ng-class="{'invisible':!folder.folders || !folder.folders.length}" class="glyphicon glyphicon-minus"></i>
 				<i open notselect class="glyphicon glyphicon-folder-open"></i>
 				<i close notselect class="glyphicon glyphicon-plus"></i>
 				<i close notselect class="glyphicon glyphicon-folder-close"></i>
-				_
 			</a>
 			<span class="badge" ng-bind="0"></span>
 <!--			<span notselect class="pull-right">
@@ -19,7 +24,7 @@
 					<i notselect class="glyphicon glyphicon-chevron-left"></i>
 				</a>
 			</span>-->
-			{{folder.label}} {{folder.id}} {{folder.label}} {{folder.id}} {{folder.label}} {{folder.id}} {{folder.label}} {{folder.id}} {{folder.label}} {{folder.id}} {{folder.label}} {{folder.id}}
+			{{folder.label}} {{folder.id}}
  		</span>
 	</div>
 	<div ng-if="folder.folders && folder.folders.length" class="tree-children collapse in" id="folder{{folder.id}}">
