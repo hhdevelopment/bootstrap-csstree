@@ -16,7 +16,7 @@
 	"dependencies": {
 		"angular": "^1.6.3",
 		"bootstrap": "^3.3.7",
-		"jquery": "^3.2.1",
+		"jquery": "^3.2.1"
 	},
 	"devDependencies": {
 		"npm-auto-version": "^1.0.0",
