@@ -14,6 +14,7 @@ pipelines:
           - npm install gulp -D
           - gulp build site
           - printf "//`node -p \"require('url').parse(process.env.NPM_REGISTRY_URL || 'https://registry.npmjs.org').host\"`/:_authToken=${NPM_TOKEN}\nregistry=${NPM_REGISTRY_URL:-https://registry.npmjs.org}\n" >> ~/.npmrc
+          - git config --global push.default matching
           - git config user.email "francois.achache@gmail.com"
           - git config user.name "hhfrancois"
           - npm version patch
