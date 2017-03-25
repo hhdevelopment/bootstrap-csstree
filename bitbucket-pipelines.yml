@@ -15,5 +15,5 @@ pipelines:
           - git branch
           - git remote -v
           - git status
-#          - git push --all
-#          - npm publish
+          - git push --all
+          - npm publish
