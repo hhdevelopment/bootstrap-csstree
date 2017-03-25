@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 gulp.task('default', ['clean', 'build', 'site']);
 
 gulp.task('build', function () {
-	return gulp.src('src/less/tree.less')
+	return gulp.src('src/less/bootstrap-csstree.less')
 	  .pipe(less({paths: [path.join(__dirname, 'less', 'includes')]}))
 	  .pipe(postcss([mergecss()]))
 	  .pipe(cssnano())
