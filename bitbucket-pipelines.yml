@@ -13,6 +13,7 @@ pipelines:
           - git config user.name "hhfrancois"
           - npm version patch
           - git branch
+          - git remote -v
           - git status
-          - git push --all
+#          - git push --all
 #          - npm publish
