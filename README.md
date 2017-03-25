@@ -23,6 +23,16 @@ Include css in your build
 node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
 
 * Configuration
+In your index.html
+```html
+<!DOCTYPE html>
+<html ng-app="tree-demo">
+	<head>
+		...
+		<link rel="stylesheet" href="bootstrap-csstree.css">
+		...
+```
+
 
 ```html
 <div class="tree">
