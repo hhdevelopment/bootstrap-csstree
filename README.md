@@ -1,12 +1,18 @@
 # README #
 
-CSS Tree
-A full bootstrap and angular css implementation for tree data representation.
+Bootstrap-treecss
+A full bootstrap css implementation for tree data representation.
 
 ### How do I get set up? ###
 
 * Summary of set up
-Add only tree.css to your project
+Tree.css is based on bootstrap features.  
+So add bootstrap.js, bootrap-theme.js, jquery.js.  
+Optionnaly add fonts from boostrap.  
+Of course you can use your favorite dependency manager, bower or npm and your favorute packager like webpack.  
+Treecss is only css so no probleme for packaging.
+
+Finally add tree.css to your project
 
 * Configuration
 
