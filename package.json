@@ -1,34 +1,33 @@
 {
-	"name": "bootstrap-csstree",
-	"version": "1.0.3",
-	"author": "Achache françois",
-	"license": "ISC",
-	"main": "dist/tree.css",
-	"keywords": [
-		"css",
-		"tree",
-		"bootstrap"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://bitbucket.org/hhfrancois/csstree"
-	},
-	"dependencies": {
-		"angular": "^1.6.3",
-		"bootstrap": "^3.3.7",
-		"jquery": "^3.2.1"
-	},
-	"devDependencies": {
-		"del": "~1.2.0",
-		"gulp": "^3.9.1",
-		"gulp-concat": "^2.6.1",
-		"gulp-cssnano": "^2.1.2",
-		"gulp-less": "^3.3.0",
-		"gulp-postcss": "^6.3.0",
-		"less": "^2.7.2",
-		"path": "^0.12.7",
-		"postcss-merge-selectors": "0.0.6"
-	},
-	"scripts": {
-	}
+  "name": "bootstrap-csstree",
+  "version": "1.1.0",
+  "author": "Achache françois",
+  "license": "ISC",
+  "main": "dist/tree.css",
+  "keywords": [
+    "css",
+    "tree",
+    "bootstrap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/hhfrancois/csstree"
+  },
+  "dependencies": {
+    "angular": "^1.6.3",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "del": "~1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-less": "^3.3.0",
+    "gulp-postcss": "^6.3.0",
+    "less": "^2.7.2",
+    "path": "^0.12.7",
+    "postcss-merge-selectors": "0.0.6"
+  },
+  "scripts": {}
 }
