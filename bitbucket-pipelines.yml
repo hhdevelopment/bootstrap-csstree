@@ -14,5 +14,5 @@ pipelines:
           - npm version patch
           - git branch
           - git status
-#          - git push origin/master
+          - git push --all
 #          - npm publish
