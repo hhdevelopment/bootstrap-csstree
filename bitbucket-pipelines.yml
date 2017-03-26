@@ -12,14 +12,11 @@ pipelines:
       - step:
           script:
             - printf "//`node -p \"require('url').parse(process.env.NPM_REGISTRY_URL || 'https://registry.npmjs.org').host\"`/:_authToken=${NPM_TOKEN}\nregistry=${NPM_REGISTRY_URL:-https://registry.npmjs.org}\n" >> ~/.npmrc
-#            - git config --global push.default matching
-#            - git config user.email "francois.achache@gmail.com"
-#            - git config user.name "hhfrancois"
-#            - npm version $BITBUCKET_BRANCH
-#            - git fetch --all
-#            - git branch
-#            - git checkout master
-#            - git merge $BITBUCKET_BRANCH
-#            - git branch
-#            - git push origin $BITBUCKET_BRANCH
+            - git config --global push.default matching
+            - git config user.email "francois.achache@gmail.com"
+            - git config user.name "hhfrancois"
+            - npm version $BITBUCKET_BRANCH
+            - git checkout -b master origin/master
+            - git merge $BITBUCKET_BRANCH
+            - git push
             - npm publish
