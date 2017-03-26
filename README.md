@@ -22,7 +22,7 @@ Include css in your build
 
 node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
 
-[![sample](sample.PNG)](sample.PNG)
+![sample.PNG](https://bitbucket.org/repo/Gj7odx/images/3877367888-sample.PNG)
 
 * Configuration
 In your index.html
