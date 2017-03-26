@@ -3,21 +3,26 @@ pipelines:
   default:
     - step:
         script:
-          - npm install
-          - npm install gulp-cli -g
-          - npm install gulp -D
-          - gulp build site
+          - echo $BITBUCKET_BRANCH
+#          - npm install
+#          - npm install gulp-cli -g
+#          - npm install gulp -D
+#          - gulp build site
   branches:
     release:
       - step:
           script:
+            - npm install
+            - npm install gulp-cli -g
+            - npm install gulp -D
+            - gulp build site
             - printf "//`node -p \"require('url').parse(process.env.NPM_REGISTRY_URL || 'https://registry.npmjs.org').host\"`/:_authToken=${NPM_TOKEN}\nregistry=${NPM_REGISTRY_URL:-https://registry.npmjs.org}\n" >> ~/.npmrc
             - git config --global push.default matching
             - git config user.email "francois.achache@gmail.com"
             - git config user.name "hhfrancois"
             - npm version patch
             - git push origin --tags
-            - git checkout -b master origin/master
+            - git checkout -b master --track origin/master
             - git merge $BITBUCKET_BRANCH
             - git push
             - npm publish
