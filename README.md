@@ -22,6 +22,8 @@ Include css in your build
 
 node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
 
+<img src="sample.PNG">
+
 * Configuration
 In your index.html
 ```html
@@ -39,6 +41,10 @@ In your index.html
 	<span ng-repeat="folder in ctrl.folders track by $index" ng-include="'tree-template.html'"></span>
 </div>
 ```
+
+See class tree
+Here we use recursive template tree-template.html
+
 * tree-template.html
 ```html
 <span>
@@ -65,6 +71,26 @@ In your index.html
 	</div>
 </span>
 ```
+
+See main class
+ * class **tree-item**
+See classes for style tree-item :
+ * class **tree-item-success**
+ * class **tree-item-info**
+ * class **tree-item-warning**
+ * class **tree-item-danger**
+ * class **active**
+ * class **disabled**
+See for collapse, folde, expande icons :
+ * atttribute **open**
+ * atttribute **close**
+Add **noselect** on node that not select item
+Add **data-toggle** and **data-target** for use boostrap feature collapse in and out
+See classes :
+ * tree-childen
+ * collapse
+ * in : treechildren will be open
+
 ```js
 var ctrl = this;
 ctrl.folders = [];
@@ -91,3 +117,5 @@ function handlerSelectFolder(event, folder) {
 	}
 }
 ```
+
+Function handlerSelectFolder can be use for standard use. ctrl key press for multi select, etc...
