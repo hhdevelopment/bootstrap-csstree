@@ -22,6 +22,8 @@ Include css in your build
 
 node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
 
+[Demo](http://jsfiddle.net/hhfrancois/s4m97dmv/2/embedded/ "Demo on jsfiddle")
+
 ![sample.PNG](https://bitbucket.org/repo/Gj7odx/images/3877367888-sample.PNG)
 
 * Configuration
