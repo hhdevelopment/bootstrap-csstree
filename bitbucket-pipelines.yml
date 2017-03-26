@@ -22,7 +22,8 @@ pipelines:
             - git config user.name "hhfrancois"
             - npm version patch
             - git fetch origin
-            - git checkout -f master
+            - git branch -r
+            - git checkout -t -b master origin/master
             - git merge $BITBUCKET_BRANCH
             - git push origin --tags
             - git push
