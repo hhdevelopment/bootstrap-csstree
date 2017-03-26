@@ -5,7 +5,7 @@ pipelines:
         script:
           - echo $BITBUCKET_BRANCH
           - npm install
-#          - npm install gulp-cli -g
+          - npm install gulp-cli -g
           - npm install gulp -D
           - gulp build site
   branches:
