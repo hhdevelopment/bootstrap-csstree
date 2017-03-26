@@ -19,5 +19,6 @@ pipelines:
             - npm version $BITBUCKET_BRANCH
 #            - git checkout origin/master
 #            - git merge $BITBUCKET_BRANCH
+            - git branch
             - git push origin $BITBUCKET_BRANCH
             - npm publish
