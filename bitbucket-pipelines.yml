@@ -18,6 +18,7 @@ pipelines:
             - git config user.name "hhfrancois"
             - npm version $BITBUCKET_BRANCH
             - git fetch
+            - git branch
             - git checkout master
             - git merge $BITBUCKET_BRANCH
 #            - git branch
