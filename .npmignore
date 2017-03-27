@@ -1,4 +1,5 @@
 /nbproject/
+/node_modules/
 /src/
 /gulpfile.js
 /bitbucket-pipelines.yml
