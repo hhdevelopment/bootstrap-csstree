@@ -7,6 +7,9 @@ pipelines:
           - npm install gulp-cli -g
           - npm install gulp -D
           - gulp build site
+          - ls -lta
+          - cd dist
+          - ls -lta
   branches:
     release:
       - step:
