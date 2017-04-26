@@ -1,5 +1,6 @@
 /nbproject/
 /src/
+/node_modules/
 /gulpfile.js
 /bitbucket-pipelines.yml
 /.gitignore
