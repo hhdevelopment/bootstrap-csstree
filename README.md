@@ -1,24 +1,24 @@
 # README #
 
-Bootstrap-treecss
-A full bootstrap css implementation for tree data representation.
+Bootstrap-treecss  
+A full bootstrap css implementation for tree data representation.  
 
-### How do I get set up? ###
+### How do I get set up? ###  
 
 * Summary of set up
 Tree.css is based on bootstrap features.  
 So add bootstrap.js, bootrap-theme.js, jquery.js.  
-Optionnaly add fonts from boostrap.  
-Of course you can use your favorite dependency manager, bower or npm and your favorute packager like webpack.  
-Treecss is only css so no probleme for packaging.
+Optionnaly add fonts from boostrap.    
+Of course you can use your favorite dependency manager, bower or npm and your favorute packager like webpack.    
+Treecss is only css so no probleme for packaging.  
 
-Finally add tree.css to your project
+Finally add tree.css to your project  
 
 * Install 
-Use npm
-npm install bootstrap-csstree --save
+Use npm  
+npm install bootstrap-csstree --save  
 
-Include css in your build
+Include css in your build  
 
 node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
 
@@ -27,7 +27,7 @@ node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
 ![sample.PNG](https://bitbucket.org/repo/Gj7odx/images/3877367888-sample.PNG)
 
 * Configuration
-In your index.html
+In your index.html  
 ```html
 <!DOCTYPE html>
 <html ng-app="tree-demo">
@@ -44,8 +44,8 @@ In your index.html
 </div>
 ```
 
-See class tree
-Here we use recursive template tree-template.html
+See class tree  
+Here we use recursive template tree-template.html  
 
 * tree-template.html
 ```html
@@ -74,21 +74,21 @@ Here we use recursive template tree-template.html
 </span>
 ```
 
-See main class
+See main class  
  * class **tree-item**
-See classes for style tree-item :
+See classes for style tree-item :  
  * class **tree-item-success**
  * class **tree-item-info**
  * class **tree-item-warning**
  * class **tree-item-danger**
  * class **active**
  * class **disabled**
-See for collapse, folde, expande icons :
+See for collapse, folde, expande icons :  
  * atttribute **open**
  * atttribute **close**
-Add **noselect** on node that not select item
-Add **data-toggle** and **data-target** for use boostrap feature collapse in and out
-See classes :
+Add **noselect** on node that not select item  
+Add **data-toggle** and **data-target** for use boostrap feature collapse in and out  
+See classes :  
  * tree-childen
  * collapse
  * in : treechildren will be open
