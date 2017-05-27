@@ -3,9 +3,9 @@
 Bootstrap-treecss  
 A full bootstrap css implementation for tree data representation.  
 
-### How do I get set up? ###  
+### How do I get set up? 
 
-* Summary of set up
+#### Summary of set up
 Tree.css is based on bootstrap features.  
 So add bootstrap.js, bootrap-theme.js, jquery.js.  
 Optionnaly add fonts from boostrap.    
@@ -14,9 +14,11 @@ Treecss is only css so no probleme for packaging.
 
 Finally add tree.css to your project  
 
-* Install 
+#### Install 
 Use npm  
+```sh
 npm install bootstrap-csstree --save  
+```
 
 Include css in your build  
 
@@ -26,8 +28,12 @@ node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
 
 ![sample.PNG](https://bitbucket.org/repo/Gj7odx/images/3877367888-sample.PNG)
 
-* Configuration
+#### Configuration
+
 In your index.html  
+
+* Add bootstrap-csstree.css directly or from you dependencies tools (npm, webpack, gulp, etc...)
+
 ```html
 <!DOCTYPE html>
 <html ng-app="tree-demo">
@@ -37,6 +43,7 @@ In your index.html
 		...
 ```
 
+* Add root tree
 
 ```html
 <div class="tree">
@@ -47,7 +54,9 @@ In your index.html
 See class tree  
 Here we use recursive template tree-template.html  
 
-* tree-template.html
+* Define items template 
+**** tree-template.html
+
 ```html
 <span>
 	<div ng-class="{'active':ctrl.selectedFolderIds.includes(folder.id) || folder.active, 
@@ -74,24 +83,35 @@ Here we use recursive template tree-template.html
 </span>
 ```
 
-See main class  
+**See main class**  
+
 * class **tree-item**
-See classes for style tree-item :  
+
+**See classes for style tree-item :**  
+
 * class **tree-item-success**  
 * class **tree-item-info**  
 * class **tree-item-warning**   
 * class **tree-item-danger**  
 * class **active**  
 * class **disabled**  
-See for collapse, folde, expande icons :  
+
+**See for collapse, folde, expande icons :**  
+
 * atttribute **open**  
 * atttribute **close**  
+
 Add **noselect** on node that not select item  
 Add **data-toggle** and **data-target** for use boostrap feature collapse in and out    
-See classes :  
+
+**See classes :**  
+
 * tree-childen  
 * collapse  
 * in : treechildren will be open  
+
+#### In js add click handler
+Example in angular 1
 
 ```js
 var ctrl = this;
