@@ -75,23 +75,23 @@ Here we use recursive template tree-template.html
 ```
 
 See main class  
- * class **tree-item**
+* class **tree-item**
 See classes for style tree-item :  
- * class **tree-item-success**
- * class **tree-item-info**
- * class **tree-item-warning**
- * class **tree-item-danger**
- * class **active**
- * class **disabled**
+* class **tree-item-success**  
+* class **tree-item-info**  
+* class **tree-item-warning**   
+* class **tree-item-danger**  
+* class **active**  
+* class **disabled**  
 See for collapse, folde, expande icons :  
- * atttribute **open**
- * atttribute **close**
+* atttribute **open**  
+* atttribute **close**  
 Add **noselect** on node that not select item  
-Add **data-toggle** and **data-target** for use boostrap feature collapse in and out  
+Add **data-toggle** and **data-target** for use boostrap feature collapse in and out    
 See classes :  
- * tree-childen
- * collapse
- * in : treechildren will be open
+* tree-childen  
+* collapse  
+* in : treechildren will be open  
 
 ```js
 var ctrl = this;
