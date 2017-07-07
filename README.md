@@ -22,7 +22,9 @@ npm install bootstrap-csstree --save
 
 Include css in your build  
 
+```sh
 node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
+```
 
 [Demo](http://jsfiddle.net/hhfrancois/s4m97dmv/2/embedded/ "Demo on jsfiddle")
 
@@ -53,6 +55,10 @@ In your index.html
 
 See class tree  
 Here we use recursive template tree-template.html  
+
+**See classes for style tree :**  
+
+* class **disabled**  
 
 * Define items template 
 **** tree-template.html
