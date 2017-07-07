@@ -26,11 +26,23 @@
 	</head>
 	<body>
 		<div class="container" ng-controller="DemoCtrl as ctrl">
-			<div class="page-header">
-				<h1>Demo css tree</h1>
-			</div>
+			<br/>
+			<br/>
+			<br/>
+			<form class="form-horizontal">
+				<label class="col-sm-2 control-label">Demo css tree</label>
+				<div class="col-sm-10">
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-default" ng-class="{'btn-primary':!ctrl.disabled}" ng-click="ctrl.disabled = false">Enable</button>
+						<button type="button" class="btn btn-default" ng-class="{'btn-primary':ctrl.disabled}" ng-click="ctrl.disabled = true">Disable</button>
+					</div>
+				</div>
+			</form>
+			<br/>
+			<br/>
+			<br/>
 			<div class="folder-container">
-				<div class="tree">
+				<div class="tree" ng-disabled="ctrl.disabled">
 					<span ng-repeat="folder in ctrl.folders track by $index" ng-include="'tree-template.html'"></span>
 				</div>
 			</div>

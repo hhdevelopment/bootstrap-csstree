@@ -8,6 +8,7 @@
 		ctrl.folders = [];
 		ctrl.handlerSelectFolder = handlerSelectFolder;
 		ctrl.selectedFolderIds = [];
+		ctrl.disabled = false;
 
 		/**
 		 * folder selection 
@@ -15,7 +16,7 @@
 		 * @param {type} folder
 		 */
 		function handlerSelectFolder(event, folder) {
-			if(!event.target.hasAttribute("notselect") && !folder.disabled) {
+			if(!ctrl.disabled && !event.target.hasAttribute("notselect") && !folder.disabled) {
 				if(!event.ctrlKey) {
 					ctrl.selectedFolderIds = [folder.id];
 				} else {
