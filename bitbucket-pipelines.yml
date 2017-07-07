@@ -9,8 +9,6 @@ pipelines:
             - npm install gulp-cli -g
             - npm install gulp -D
             - gulp build site
-            - ls
-            - ls dist/bootstrap-csstree.css
    branches:
       release:
          - step:
@@ -26,7 +24,6 @@ pipelines:
                - git config user.name "hhfrancois"
                - git add dist/bootstrap-csstree.css
                - npm version patch
-               - git remove /dist/bootstrap-csstree.css
                - git push origin $BITBUCKET_BRANCH:master
                - git push origin --tags
                - npm publish
