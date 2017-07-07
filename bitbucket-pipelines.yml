@@ -9,6 +9,8 @@ pipelines:
             - npm install gulp-cli -g
             - npm install gulp -D
             - gulp build site
+            - ls
+            - ls dist/bootstrap-csstree.css
    branches:
       release:
          - step:
@@ -22,7 +24,7 @@ pipelines:
                - printf "//`node -p \"require('url').parse(process.env.NPM_REGISTRY_URL || 'https://registry.npmjs.org').host\"`/:_authToken=${NPM_TOKEN}\nregistry=${NPM_REGISTRY_URL:-https://registry.npmjs.org}\n" >> ~/.npmrc
                - git config user.email "francois.achache@gmail.com"
                - git config user.name "hhfrancois"
-               - git add /dist/bootstrap-csstree.css
+               - git add dist/bootstrap-csstree.css
                - npm version patch
                - git remove /dist/bootstrap-csstree.css
                - git push origin $BITBUCKET_BRANCH:master
