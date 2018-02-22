@@ -1,7 +1,7 @@
-# BOOTSTRAP-TREECSS : A full bootstrap css implementation for tree data structure
+# BOOTSTRAP-CSSTREE : A full bootstrap css implementation for tree data structure
 
-[![npm version](https://badge.fury.io/js/bootstrap-treecss.svg)](https://www.npmjs.com/package/bootstrap-treecss)
-[![Build Status](https://travis-ci.org/hhdevelopment/bootstrap-treecss.svg?branch=master)](https://travis-ci.org/hhdevelopment/bootstrap-treecss)
+[![npm version](https://badge.fury.io/js/bootstrap-csstree.svg)](https://www.npmjs.com/package/bootstrap-csstree)
+[![Build Status](https://travis-ci.org/hhdevelopment/bootstrap-csstree.svg?branch=master)](https://travis-ci.org/hhdevelopment/bootstrap-csstree)
 
 ## Demo 
 
@@ -16,7 +16,7 @@ Optionnaly add fonts from boostrap.
 Of course you can use your favorite dependency manager, bower or npm and your favorute packager like webpack.    
 Treecss is only css so no probleme for packaging.  
 
-Finally add tree.css to your project  
+Finally add bootstrap-csstree.css to your project  
 
 ### Install 
 Use npm  
