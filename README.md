@@ -1,11 +1,15 @@
-# README #
+# BOOTSTRAP-TREECSS : A full bootstrap css implementation for tree data structure
 
-Bootstrap-treecss  
-A full bootstrap css implementation for tree data representation.  
+[![npm version](https://badge.fury.io/js/bootstrap-treecss.svg)](https://www.npmjs.com/package/bootstrap-treecss)
+[![Build Status](https://travis-ci.org/hhdevelopment/bootstrap-treecss.svg?branch=master)](https://travis-ci.org/hhdevelopment/bootstrap-treecss)
 
-### How do I get set up? 
+## Demo 
 
-#### Summary of set up
+[Demo](http://hhdev.fr/bootstrap-csstree/index.html#)
+
+## How do I get set up? 
+
+### Summary of set up
 Tree.css is based on bootstrap features.  
 So add bootstrap.js, bootrap-theme.js, jquery.js.  
 Optionnaly add fonts from boostrap.    
@@ -14,7 +18,7 @@ Treecss is only css so no probleme for packaging.
 
 Finally add tree.css to your project  
 
-#### Install 
+### Install 
 Use npm  
 ```sh
 npm install bootstrap-csstree --save  
@@ -25,11 +29,10 @@ Include css in your build
 ```sh
 node_modules/bootstrap-csstree/dist/bootstrap-csstree.css
 ```
-[Demo](//jsfiddle.net/hhfrancois/s4m97dmv/embedded/ "Demo on jsfiddle")
 
-![sample.PNG](https://bitbucket.org/repo/Gj7odx/images/3877367888-sample.PNG)
+![sample.PNG](sample.PNG)
 
-#### Configuration
+### Configuration
 
 In your index.html  
 
@@ -115,7 +118,7 @@ Add **data-toggle** and **data-target** for use boostrap feature collapse in and
 * collapse  
 * in : treechildren will be open  
 
-#### In js add click handler
+### In js add click handler
 Example in angular 1
 
 ```js
