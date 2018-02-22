@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-csstree",
+  "description": "Tree bootstrap pure css implementation",
+  "author": "Achache francois",
+  "license": "MIT",
+  "main": [
+    "src/less/bootstrap-csstree.less"
+  ],
+  "keywords": [
+    "bootstrap",
+    "tree"
+  ],
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.x",
+    "bootstrap": "^3.x",
+    "jquery": "^3.x"
+  }
+}

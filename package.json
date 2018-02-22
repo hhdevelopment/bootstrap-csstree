@@ -1,8 +1,8 @@
 {
   "name": "bootstrap-csstree",
   "version": "1.0.26",
-  "author": "Achache françois",
-  "license": "ISC",
+  "author": "Achache francois",
+  "license": "MIT",
   "main": "dist/bootstrap-csstree.css",
   "keywords": [
     "css",
@@ -14,9 +14,9 @@
     "url": "https://bitbucket.org/hhfrancois/csstree"
   },
   "dependencies": {
-    "angular": "^1.6.3",
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
+    "angular": "^1.x",
+    "bootstrap": "^3.x",
+    "jquery": "^3.x"
   },
   "devDependencies": {
     "del": "~1.2.0",
